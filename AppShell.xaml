@@ -7,15 +7,18 @@
     Shell.FlyoutBehavior="Disabled">
     <TabBar>
         <ShellContent            
-            Title="Shopping Lists"            
-            ContentTemplate="{DataTemplate local:MainPage}"              />
+            Title="Welcome"            
+            ContentTemplate="{DataTemplate local:MainPage}"             
+            />
         <ShellContent             
             Title="About"             
-            ContentTemplate="{DataTemplate local:AboutPage}"              />
-    </TabBar>
+            ContentTemplate="{DataTemplate local:AboutPage}"
+             />
+    
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="My Shopping Lists"
+        ContentTemplate="{DataTemplate local:ListEntryPage}"
+       />
+    </TabBar>
 
 </Shell>
